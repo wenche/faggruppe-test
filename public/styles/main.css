@@ -1,0 +1,126 @@
+body {
+    background: linear-gradient(to bottom, #063954, #446b7f, #063954) no-repeat;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Verdana;
+    margin: 0;
+    padding: 0;
+
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.summary-page,
+.registration-page {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.date {
+    margin: 20px;
+}
+
+.date span {
+    display: block;
+}
+
+.content {
+    overflow: hidden;
+    text-align: center;
+    flex: 1;
+}
+
+.main-content {
+    margin-top: 130px;
+}
+
+.input-display {
+    position: relative;
+    background: #063954;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    box-shadow: 0 0 0 5px rgb(95, 139, 100), 0 0 0 10px rgb(116, 162, 95);
+}
+
+.input-display > span {
+    margin: auto;
+}
+
+.hours {
+    font-size: 100px;
+}
+
+.input-display span {
+    vertical-align: middle;
+}
+
+.btn {
+    border: none;
+}
+
+.btn-input-control {
+    font-weight: bolder;
+    background: transparent;
+    margin: 20px;
+    font-size: 60px;
+    color: rgb(37, 82, 106);
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    color: rgb(96, 161, 242);
+    margin: 0;
+    font-size: 40px;
+    border-bottom: 2px solid #446b7f;
+}
+
+.project-blocks {
+    display: flex;
+}
+
+.project-blocks > div {
+    margin-right: 20px;
+}
+
+.green   {
+    background-color: #91c349;
+}
+
+.coral {
+    background-color: #ff584c;
+}
+
+.yellow {
+    background-color: #ffbd16;
+}
+
+.color-summary-block {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    display: flex;
+}
+
+.color-summary-block span {
+    margin: auto;
+}
+
+.pull-right {
+    float: right;
+    text-align: right;
+}
+
+pull-left {
+    float: left;
+    text-align: left;
+}

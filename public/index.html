@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tickle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<div id="registration" class="registration-page">
+<div  class="content">
+
+    <div class="date pull-right">
+        <span>Onsdag</span>
+        <span>16. oktober</span>
+    </div>
+    <div class="main-content">
+        <h1 class="title">Statoil Web Drilling</h1>
+        <div class="input-display">
+            <span class="hours" data-bind="text:hours"></span>
+        </div>
+    </div>
+    <div class="">
+        <button class="btn btn-input-control" id="minus" data-bind="click: decrementHours">-</button>
+        <button class="btn btn-input-control" id="plus" data-bind="click: incrementHours">+</button>
+    </div>
+</div>
+<button class="btn btn-primary" data-bind="click: submitHours">Før timer</button>
+</div>
+<div id="summary" style="display: none">
+    <div class="content">
+        <div class="main-content">
+            <div class="date">
+                <span>Onsdag</span>
+                <span>16. oktober</span>
+            </div>
+            <div class="hour-summary">
+                <span class="highlight">Totalt</span>
+                <span id="total">2</span>
+            </div>
+        </div>
+    </div>
+    <div class="project-blocks">
+        <div>
+            <span class="color-summary-block green">
+                <span id="hoursSummaryStatoil">3</span>
+            </span>
+            <span class="project-title">Statoil Web Drill</span>
+        </div>
+        <div>
+            <span class="color-summary-block coral">
+                <span >1</span>
+            </span>
+            <span class="project-title">Odfjell drilling</span>
+        </div>
+        <div>
+            <span class="color-summary-block yellow">
+                <span>4</span>
+            </span>
+            <span class="project-title">Rieber & Søn</span>
+        </div>
+    </div>
+<script src="scripts/lib/jquery.js"></script>
+<script src="scripts/lib/knockout.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
